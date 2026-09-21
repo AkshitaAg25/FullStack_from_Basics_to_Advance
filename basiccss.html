@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    html{
+        background-color:wheat;
+    }
+    body{
+        background-color: plum;
+        margin-top: 0%; /*not working as h2 has its own margin (depends on browser and device)*/
+        width: 60%;
+        margin: 20%;
+        padding: 3%;
+        border-radius: 50px;
+    }
+    h2{
+        margin-top: 0%;
+        color:black;
+        font-family: "Bitcount Prop Single", system-ui;
+    }
+    #h2{
+        color: red;     /*id is above class*/
+    }
+    .head{
+        color: blue;
+    }
+    img{
+        /* display:block;
+        margin: auto; */
+        margin: 10%;
+        margin-bottom: 0%;
+        width:-webkit-fill-available;
+        /* position: absolute; */
+        
+    }
+    p{
+        /* background-color: black; */
+        color: rgb(243, 255, 240);
+        font-family: cursive;
+        padding: 5%;
+        margin-top: 0%;
+        /* position: absolute;
+        left: 10px;
+        right: 20px; */
+    }
+</style>
+<body>
+    <h2 class="head">Random</h2>
+    <img src="https://picsum.photos/700/300" alt="">
+    <p>
+        Donec posuere viverra felis, in convallis sapien. Quisque congue consequat erat. Phasellus purus diam, eleifend a arcu ut, ultricies mollis sem. Morbi cursus sit amet lorem ac convallis. Ut blandit id enim eget pulvinar. Mauris consectetur sem leo, vitae dictum purus iaculis laoreet. Maecenas dictum pellentesque ante sollicitudin pulvinar. Etiam finibus et arcu sit amet varius. Proin fermentum malesuada vehicula. Cras leo turpis, aliquet ut tellus non, accumsan egestas lorem. Ut finibus scelerisque leo, ut laoreet dolor. Sed dictum sem neque, sit amet dignissim sem cursus et.
+    </p>
+    <h2 id="h2" class="head">heading2</h2>
+</body>
+</html>

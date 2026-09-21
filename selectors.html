@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        *{
+            margin: 10px;
+            padding:0px;
+        }
+
+        #myid{
+            color: blue;
+        }
+        .myclass{
+            color:yellow;
+            text-shadow: 0 0 2px black;
+        }
+
+        /* element selector */
+        li{
+            color: red  ;
+        }
+
+        /* attribute */
+        input[type=email]{
+            border-radius: 10px;
+            border-color:gold;
+        }
+        li[data=null]{
+            background-color: bisque;
+        }
+
+        /* custom tag (gets to default property of html)*/
+        mytag{
+            color:darkmagenta;
+            /* font-size: 50px; */
+        }
+
+        /* combinators (works on parent child relationship, line wise)*/
+        section h2{
+            color:aqua;
+        }
+        section>h2{
+            color:blueviolet;
+        }
+        h2+p{
+            color:brown
+        }
+        h2~p{
+            color:green;
+            font-size: 40px;
+        }
+
+        /* pseuodo class */
+        #pp:hover{
+            color:palevioletred;
+        }
+        button{
+            color:white;
+            background-color: black;
+            border-width: 0px;
+            font-size: 40px;
+        }
+        button:hover{
+            box-shadow: 3px 3px 5px grey;
+            background-color: red;
+        }
+        button:active{
+            box-shadow: 0px 0px 0px;
+            background-color: grey;
+        }
+        button:focus{
+            outline:3px solid red; /*visible when Tab is pressed */
+        }
+        input[type=checkbox]{
+            height:50px;
+            width:50px;
+        }
+        input:checked{
+            box-shadow: 3px 3px 5px;
+            accent-color: hotpink;
+        }
+        a{
+            font-size: 40px;
+        }
+        a:link{
+            color:red;
+        }
+        a:visited{
+            color:skyblue;
+        }
+        input{
+            font-size: 30px;
+        }
+        input:required{
+            border-color: red;
+        }
+        input:optional{
+            border-color: green;
+        }
+        input:disabled{
+            border-color: blue;
+        }
+        input:not(:required){
+            background-color: dodgerblue;
+        }
+        input:in-range{
+            color:lightgreen;
+        }
+        input:out-of-range{
+            background-color: red;
+            
+        }
+        div:has(h3){
+            background-color: teal;
+        }
+        /* other pseudo class for form:
+        :enabled
+        :optional
+        :read-only
+        :read-write
+        :placeholder-shown
+        :valid
+        :invalid
+        :in-range
+        :out-of-range 
+        :has
+        :is
+        :where
+        :not    */
+    </style>
+</head>
+<body>
+    <mytag>adskj</mytag>
+    <h2>Selectors</h2>
+    <ul>
+        <li class="myclass">Universal</li>
+        <li id="myid">Id</li>
+        <li class="myclass">Class</li>
+        <li data="null">Element</li>
+        <li>Attribute</li>
+        <li>Combinators</li>
+        <li>Pseudo Class</li>
+        <li>Pseudo Element</li>
+    </ul>
+    
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Password">
+    <hr>
+
+    <section>
+        <h2>Heading</h2>
+        <p>Para1</p>
+        <p>Para 2</p>
+        <div>
+            <h2>Heading 2</h2>
+        </div>
+    </section>
+    <p id='pp'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, 
+        the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text 
+        for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing 
+        software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+
+    <button>Click</button>
+    <input type="checkbox">
+    <br>
+    <!--  # refresh the current page -->
+    <a href="#">LINK</a> 
+    <a href="#1">LINK2</a>
+    <form>
+        <input type="text" placeholder="First Name" required><br>
+        <input type="text" placeholder="Middle Name" ><br>
+        <input type="text" placeholder="Last Name" required><br>
+        <input type="text" value="Mathura" disabled><br>
+        <input type="submit" placeholder="Submit">
+        <input type="number" min="10" max="15">
+    </form>
+    <div>
+        <h3>heading 3</h3>
+    </div>
+    <div>
+        <h1>Heading</h1>
+    </div>
+</body>
+</html>

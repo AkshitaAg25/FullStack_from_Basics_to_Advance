@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .page-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        min-height: 100vh;       
+        background: #f0f2f5;
+        padding: 20px;
+        }
+
+        .login-card {
+        display: flex;
+        flex-direction: column;  
+        gap: 20px;               
+        width: 100%;
+        max-width: 400px;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-card h2 {
+        color: #1a1a1a;
+        font-size: 24px;
+        }
+
+        .login-card p {
+        color: #666;
+        font-size: 14px;
+        margin-top: -10px; 
+        }
+
+        .input-group {
+        display: flex;
+        flex-direction: column;  
+        gap: 8px;                
+        }
+
+        .input-group label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        }
+
+        .input-group input {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.2s;
+        }
+
+        .input-group input:focus {
+        border-color: #0066cc;
+        }
+
+        
+        .login-btn {
+        background: #0066cc;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+        }
+
+        .login-btn:hover {
+        background: #0052a3;
+        }
+
+        .forgot-link {
+        text-align: center;
+        color: #0066cc;
+        text-decoration: none;
+        font-size: 14px;
+        }
+
+        .forgot-link:hover {
+        text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+    
+    <form class="login-card">
+      <h2>Welcome Back</h2>
+      <p>Please enter your details to sign in.</p>
+      
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required="">
+      </div>
+      
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required="">
+      </div>
+      
+      <button type="submit" class="login-btn">Sign In</button>
+      
+      <a href="#" class="forgot-link">Forgot password?</a>
+    </form>
+
+  </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50vw;
+            /* top: 50px; */
+            /*position: relative;*/    /*box move because of this */
+            display: inline-flex;
+            overflow: scroll;
+     }
+      .box{
+        min-width: 50vw;
+        height: 50vh;
+        position: sticky;
+        left:10px;
+        /* margin-bottom: 50px; */
+      }
+        #box1{
+            background-color: red;
+            position: sticky;
+            left:10px;
+        }
+        #box2{
+            background-color: yellow;
+            position:sticky;
+            left:20px;
+        }
+        #box3{
+            background-color: blue;
+            /* position:fixed;
+            top: 10%; */
+            position:sticky;
+            left:30px;
+        }
+        #box4{
+            background-color: purple;
+            position:sticky;
+            left:40px;
+        }
+        #box5{
+            background-color: green;
+            position:sticky;
+            left:50px;
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box5">5</div>
+    </div>
+</html>

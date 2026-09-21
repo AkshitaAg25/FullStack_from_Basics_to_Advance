@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:black;
+            --text-size:100px;
+        }
+        #box1{
+            --primary-color:orange;
+            background-color: var(--primary-color);
+            outline: 2px solid black;
+            height: 200px;
+            width:200px;
+            font-size: var(--text-size);
+            /* font-size:calc(var(--text-size)*2); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">1</div>
+    </div>
+</body>
+</html>
